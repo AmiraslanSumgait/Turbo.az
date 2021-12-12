@@ -1,0 +1,52 @@
+﻿<Window x:Class="Turbo.Az.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Turbo.Az"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="700" Loaded="Window_Loaded">
+    <Grid>
+
+        <ComboBox Name="cbx_Makes" HorizontalAlignment="Left" Margin="76,25,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="Makes" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbx_Models" HorizontalAlignment="Left" Margin="76,75,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="Models" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbx_BanTypes" HorizontalAlignment="Left" Margin="76,125,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="BanType" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbx_Colors" HorizontalAlignment="Left" Margin="76,175,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="Color" HorizontalAlignment="Left" Margin="13,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mileage" HorizontalAlignment="Left" Margin="16,225,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txb_minMileage" HorizontalAlignment="Left" Margin="106,225,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="56" Height="25"/>
+        <Label Content="min" HorizontalAlignment="Left" Margin="71,224,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,0.194"/>
+        <TextBox x:Name="txb_maxMileage" HorizontalAlignment="Left" Margin="202,225,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="56" Height="25"/>
+        <Label Content="max" HorizontalAlignment="Left" Margin="167,224,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,0.194"/>
+        <Label Content="Price" HorizontalAlignment="Left" Margin="16,275,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txb_minPrice" HorizontalAlignment="Left" Margin="106,275,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="56" Height="25"/>
+        <Label Content="min" HorizontalAlignment="Left" Margin="71,274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,0.194"/>
+        <TextBox  x:Name="txb_maxPrice" HorizontalAlignment="Left" Margin="202,275,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="56" Height="25"/>
+        <Label Content="max" HorizontalAlignment="Left" Margin="167,274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,0.194"/>
+        <ComboBox Name="cbx_Cities" HorizontalAlignment="Left" Margin="347,25,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="281,21,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbx_FuelTypes" HorizontalAlignment="Left" Margin="347,75,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="FuelType" HorizontalAlignment="Left" Margin="281,71,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbx_Gears" HorizontalAlignment="Left" Margin="347,125,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="Gear" HorizontalAlignment="Left" Margin="281,121,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbx_Transmissions" HorizontalAlignment="Left" Margin="347,175,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="Transmission" HorizontalAlignment="Left" Margin="273,171,0,0" VerticalAlignment="Top"/>
+        <Label Content="Year" HorizontalAlignment="Left" Margin="282,221,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txb_minYear" HorizontalAlignment="Left" Margin="372,221,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="56" Height="25"/>
+        <Label Content="min" HorizontalAlignment="Left" Margin="336,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,0.194"/>
+        <TextBox Name="txb_maxYear" HorizontalAlignment="Left" Margin="468,221,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="56" Height="25"/>
+        <Label Content="max" HorizontalAlignment="Left" Margin="432,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,0.194"/>
+        <Label Content="EngineVol" HorizontalAlignment="Left" Margin="273,270,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txb_minEngVol" HorizontalAlignment="Left" Margin="372,271,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="56" Height="25"/>
+        <Label Content="min" HorizontalAlignment="Left" Margin="336,270,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,0.194"/>
+        <TextBox Name="txb_maxEngVol" HorizontalAlignment="Left" Margin="468,271,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="56" Height="25"/>
+        <Label Content="max" HorizontalAlignment="Left" Margin="432,270,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,0.194"/>
+        <DataGrid Name="dataGrid" Margin="0,342,0,0"/>
+        <Button Content="Search" Name="btn_Search" HorizontalAlignment="Left" Margin="571,269,0,0" VerticalAlignment="Top" Width="97" Height="32" Click="btn_Search_Click"/>
+
+    </Grid>
+
+</Window>
